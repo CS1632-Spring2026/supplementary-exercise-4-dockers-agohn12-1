@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 // TODO: Fill in with test cases.
 test('TEST-1-RESET', async ({ page }) => {
-    await page.goto('http://localhost:8080/');
+    await page.goto('http://localhost:8080');
     await page.evaluate(async () => {
         document.cookie = "1=true";
         document.cookie = "2=true";
@@ -15,7 +15,7 @@ test('TEST-1-RESET', async ({ page }) => {
   });
 
   test('TEST-2-CATALOG', async ({ page }) => {
-    await page.goto('http://localhost:8080/');
+    await page.goto('http://localhost:8080');
     await page.evaluate(async () => {
         document.cookie = "1=false";
         document.cookie = "2=false";
@@ -26,7 +26,7 @@ test('TEST-1-RESET', async ({ page }) => {
 });
 
 test('TEST-3-LISTING', async ({ page }) => {
-    await page.goto('http://localhost:8080/');
+    await page.goto('http://localhost:8080');
     await page.evaluate(async () => {
         document.cookie = "1=false";
         document.cookie = "2=false";
@@ -39,7 +39,7 @@ test('TEST-3-LISTING', async ({ page }) => {
 });
 
 test('TEST-4-RENT-A-CAT', async ({ page }) => {
-    await page.goto('http://localhost:8080/');
+    await page.goto('http://localhost:8080');
     await page.evaluate(async () => {
         document.cookie = "1=false";
         document.cookie = "2=false";
@@ -51,7 +51,7 @@ test('TEST-4-RENT-A-CAT', async ({ page }) => {
 });
 
 test('TEST-5-RENT', async ({ page }) => {
-    await page.goto('http://localhost:8080/');
+    await page.goto('http://localhost:8080');
     await page.evaluate(async () => {
         document.cookie = "1=false";
         document.cookie = "2=false";
@@ -68,7 +68,7 @@ test('TEST-5-RENT', async ({ page }) => {
 });
 
 test('TEST-6-RETURN', async ({ page }) => {
-    await page.goto('http://localhost:8080/');
+    await page.goto('http://localhost:8080');
     await page.evaluate(async () => {
         document.cookie = "1=false";
         document.cookie = "2=true";
@@ -85,7 +85,7 @@ test('TEST-6-RETURN', async ({ page }) => {
 });
 
 test('TEST-11-FEED-A-CAT-SCREENSHOT', async ({ page }) => {
-    await page.goto('http://localhost:8080/');
+    await page.goto('http://localhost:8080/greet-a-cat/Jennyanydots');
     await page.evaluate(async () => {
         document.cookie = "1=true";
         document.cookie = "2=true";
@@ -97,7 +97,7 @@ test('TEST-11-FEED-A-CAT-SCREENSHOT', async ({ page }) => {
 
 
 test('DEFECT1-FUN-GREET-A-CAT', async ({ page }) => {
-    await page.goto('http://localhost:8080/');
+    await page.goto('http://localhost:8080');
     await page.evaluate(async () => {
         document.cookie = "1=false";
         document.cookie = "2=false";
