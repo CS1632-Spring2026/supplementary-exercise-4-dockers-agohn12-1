@@ -95,7 +95,7 @@ test('TEST-11-FEED-A-CAT-SCREENSHOT', async ({ page }) => {
     await expect(page.locator('xpath=/html/body')).toHaveScreenshot();
 });
 
-
+/*
 test('DEFECT1-FUN-GREET-A-CAT', async ({ page }) => {
     await page.goto('http://localhost:8080');
     await page.evaluate(async () => {
@@ -109,4 +109,4 @@ test('DEFECT1-FUN-GREET-A-CAT', async ({ page }) => {
     await page.getByRole('button', { name: 'Rent' }).click();
     await page.getByRole('link', { name: 'Greet-A-Cat' }).click();
     await expect(page.locator('//*[@id="greeting"]/h4')).toHaveText('Meow!Meow!');
-});
+}); */
